@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form to Card</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f9; padding: 20px; }
+    form { margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 8px; }
+    input, textarea, button { width: 100%; margin: 5px 0; padding: 8px; }
+    .card { background: #fff; padding: 15px; margin: 10px 0; border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 250px; text-align: center; }
+    .card img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <input type="text" id="role" placeholder="Enter Role" required>
+    <textarea id="bio" placeholder="Enter Bio"></textarea>
+    <input type="url" id="url" placeholder="Enter Image URL">
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- ✅ container to show cards -->
+  <div id="cardsContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
